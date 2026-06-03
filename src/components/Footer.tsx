@@ -7,6 +7,16 @@ import { Envelope, Phone, MapPin, InstagramLogo } from "@phosphor-icons/react";
 export function Footer() {
   return (
     <footer id="contacto" className="bg-zinc-950 text-white pt-32 pb-12 overflow-hidden relative">
+      {/* Mascot (Búho) - Más visible y con carácter */}
+      <div className="absolute right-[-2%] bottom-[-2%] w-64 h-64 md:w-[450px] md:h-[450px] opacity-[0.08] pointer-events-none transition-all duration-1000 group-hover:opacity-10">
+        <Image
+          src="/images/buho.png"
+          alt="Sersisteca Mascot Owl"
+          fill
+          className="object-contain"
+        />
+      </div>
+
       {/* Background Pipe Detail */}
       <div className="absolute right-0 top-0 w-1/3 h-full opacity-5 pointer-events-none">
         <div className="absolute top-0 right-1/4 w-[1px] h-full bg-red-600" />
@@ -89,7 +99,7 @@ export function Footer() {
 
         <div className="pt-12 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-center">
           <p className="text-zinc-600 text-[11px] font-bold uppercase tracking-widest text-center">
-            © {new Date().getFullYear()} Sersisteca, C.A. — Ingeniería de Protección
+            © {new Date().getFullYear()} Sersisteca, C.A. — Es ingeniería...
           </p>
         </div>
       </div>

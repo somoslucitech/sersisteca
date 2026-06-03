@@ -60,11 +60,11 @@ export function TrustSection() {
         <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-white to-transparent z-20 pointer-events-none" />
         
         <div className="flex overflow-x-hidden">
-          <div className="py-4 animate-marquee whitespace-nowrap flex items-center">
+          <div className="py-8 animate-marquee whitespace-nowrap flex items-center">
             {[...clients, ...clients].map((client, idx) => (
               <div 
                 key={`${client.name}-${idx}`} 
-                className="mx-16 relative h-10 w-36 flex-shrink-0 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-700 cursor-pointer group"
+                className="mx-8 md:mx-16 relative h-8 w-28 md:h-10 md:w-36 flex-shrink-0 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-700 cursor-pointer group"
               >
                 <Image
                   src={client.src}
@@ -93,10 +93,10 @@ export function TrustSection() {
               Nuestra ingeniería se fundamenta en el cumplimiento estricto de los protocolos <span className="text-zinc-900 font-bold tracking-wider">SENCAMER</span>, rigiéndonos bajo los estándares internacionales <span className="text-red-600 font-bold italic text-base">NFPA</span> en cada diseño.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-10">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-10">
               <div className="group relative">
                 <div className="absolute -inset-4 bg-blue-50 rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative h-16 w-32 flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500">
+                <div className="relative h-20 w-40 flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500">
                   <Image
                     src="/images/logos marcas/sencamer.jpg"
                     alt="Sencamer Logo"
@@ -106,7 +106,7 @@ export function TrustSection() {
                 </div>
               </div>
               <div className="hidden sm:block h-12 w-[1px] bg-zinc-100" />
-              <div className="flex gap-8 items-center">
+              <div className="flex gap-10 sm:gap-8 items-center justify-center sm:justify-start">
                 {brands.slice(0, 3).map((brand) => (
                   <div key={brand.name} className="relative h-6 w-16 opacity-30 hover:opacity-100 transition-opacity">
                     <Image src={brand.src} alt={brand.name} fill className="object-contain grayscale" />

@@ -29,8 +29,8 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
         >
-          <span className="inline-block px-3 py-1 rounded-full bg-zinc-100 text-[10px] font-bold uppercase tracking-[0.2em] text-zinc-500 mb-8">
-            Ingeniería de Seguridad Industrial
+          <span className="inline-block px-3 py-1 rounded-full bg-blue-50 text-[10px] font-bold uppercase tracking-[0.2em] text-blue-600 mb-8">
+            Sersisteca — Es ingeniería...
           </span>
           <h1 className="text-5xl md:text-8xl font-semibold tracking-tight leading-[0.95] mb-8 text-zinc-950">
             Protección de Alto Nivel <br />
