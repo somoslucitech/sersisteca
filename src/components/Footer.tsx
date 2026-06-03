@@ -7,8 +7,8 @@ import { Envelope, Phone, MapPin, InstagramLogo } from "@phosphor-icons/react";
 export function Footer() {
   return (
     <footer id="contacto" className="bg-zinc-950 text-white pt-32 pb-12 overflow-hidden relative">
-      {/* Mascot (Búho) - Más visible y con carácter */}
-      <div className="absolute right-[-2%] bottom-[-2%] w-64 h-64 md:w-[450px] md:h-[450px] opacity-[0.08] pointer-events-none transition-all duration-1000 group-hover:opacity-10">
+      {/* Mascot (Búho) - Más visible y con carácter. Más grande en mobile */}
+      <div className="absolute right-[-15%] bottom-[-5%] w-[400px] h-[400px] md:right-[-2%] md:bottom-[-2%] md:w-[450px] md:h-[450px] opacity-[0.08] pointer-events-none transition-all duration-1000 group-hover:opacity-10">
         <Image
           src="/images/buho.png"
           alt="Sersisteca Mascot Owl"

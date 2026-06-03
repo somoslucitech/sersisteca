@@ -29,8 +29,8 @@ export function Hero() {
       </video>
 
       {/* Premium Overlay for Text Contrast and Section Transition */}
-      <div className="absolute inset-0 z-0 bg-white/40 backdrop-blur-[1px]" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/70 via-white/10 to-transparent" />
+      <div className="absolute inset-0 z-0 bg-white/40 md:bg-white/70 backdrop-blur-[1px] md:backdrop-blur-[2px]" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/70 via-white/10 to-transparent md:from-white/90 md:via-white/50 md:to-white/90" />
       
       {/* Bottom fade-out gradient to blend perfectly into the next section's white background */}
       <div className="absolute bottom-0 left-0 w-full h-48 z-0 bg-gradient-to-t from-white to-transparent" />
@@ -54,8 +54,8 @@ export function Hero() {
             Protección de Alto Nivel <br />
             <span className="text-blue-600">para la Industria.</span>
           </h1>
-          <p className="text-lg md:text-xl text-zinc-600 leading-relaxed mb-12 max-w-[55ch] mx-auto">
-            Especialistas en sistemas contra incendios y seguridad electrónica bajo normativas <span className="text-zinc-950 font-bold uppercase tracking-wider">NFPA</span>. +25 años garantizando la continuidad de su operación.
+          <p className="text-lg md:text-xl text-zinc-800 font-medium leading-relaxed mb-12 max-w-[55ch] mx-auto">
+            Especialistas en sistemas contra incendios y seguridad electrónica bajo normativas <span className="text-zinc-950 font-black uppercase tracking-wider">NFPA</span>. +25 años garantizando la continuidad de su operación.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
