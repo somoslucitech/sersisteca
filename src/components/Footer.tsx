@@ -99,7 +99,7 @@ export function Footer() {
 
         <div className="pt-12 border-t border-zinc-900 flex flex-col md:flex-row items-center justify-center">
           <p className="text-zinc-600 text-[11px] font-bold uppercase tracking-widest text-center">
-            © {new Date().getFullYear()} Sersisteca, C.A. — Es ingeniería...
+            © {new Date().getFullYear()} Sersisteca, C.A. (RIF: J-30668083-7) — Es ingeniería...
           </p>
         </div>
       </div>

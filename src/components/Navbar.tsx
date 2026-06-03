@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);

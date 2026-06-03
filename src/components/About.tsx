@@ -28,7 +28,7 @@ export function About() {
 
               <div className="relative z-10 text-center p-12">
                 <div className="text-sm uppercase tracking-[0.4em] text-zinc-500 font-bold mb-4">Established</div>
-                <div className="text-7xl font-black text-white leading-none tracking-tighter">2000</div>
+                <div className="text-7xl font-black text-white leading-none tracking-tighter">1999</div>
               </div>
             </div>
 
@@ -51,13 +51,13 @@ export function About() {
             </h2>
             <div className="space-y-8 text-zinc-600 text-lg leading-relaxed">
               <p>
-                Fundada por <span className="text-zinc-950 font-bold border-b-2 border-red-500/20">Carlos Aponte</span>, Sersisteca nació con la visión de elevar los estándares de protección industrial en la región central del país.
+                Con raíces que se remontan a <span className="text-zinc-950 font-bold border-b-2 border-red-500/20">1988</span> como &quot;Servicios y Sistemas Técnicos Carlos Aponte&quot;, nuestra identidad como <span className="text-zinc-950 font-bold">Sersisteca C.A.</span> se formaliza en 1999 bajo la visión de elevar los estándares de protección industrial.
               </p>
               <p>
-                Hoy, bajo el liderazgo de <span className="text-zinc-950 font-bold border-b-2 border-red-500/20">Leifer Aponte</span>, continuamos evolucionando, integrando tecnologías de vanguardia con la misma ética de trabajo que nos definió hace un cuarto de siglo.
+                Hoy, liderados por <span className="text-zinc-950 font-bold border-b-2 border-red-500/20">Leifer Aponte</span>, continuamos evolucionando, integrando tecnologías de vanguardia con la misma ética de trabajo que definió nuestro origen hace más de tres décadas.
               </p>
               <p className="text-base italic">
-                "No solo instalamos equipos, diseñamos tranquilidad para la gran industria."
+                &quot;No solo instalamos equipos, diseñamos tranquilidad para la gran industria.&quot;
               </p>
             </div>
             
