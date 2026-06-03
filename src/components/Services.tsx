@@ -38,8 +38,6 @@ export function Services() {
         className="absolute inset-0 pointer-events-none opacity-[0.02]"
         style={{ backgroundImage: 'radial-gradient(circle, #2563eb 1px, transparent 1px)', backgroundSize: '40px 40px' }}
       />
-      {/* Connecting Pipe Detail */}
-      <div className="absolute top-0 left-1/4 w-[1px] h-32 bg-gradient-to-b from-red-600/20 to-transparent" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">

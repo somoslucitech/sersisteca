@@ -4,21 +4,26 @@ import { motion } from "framer-motion";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-20 overflow-hidden bg-white">
-      {/* Background Red Pipes - Technical Detail */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden opacity-[0.15]">
-        <div className="absolute top-1/4 left-0 w-full h-[1.5px] bg-red-600" />
-        <div className="absolute top-1/4 left-1/3 w-[1.5px] h-full bg-red-600" />
-        <div className="absolute top-2/3 right-0 w-[60%] h-[1.5px] bg-red-600" />
-        <div className="absolute top-0 right-1/4 w-[1.5px] h-full bg-red-600" />
-        {/* Nodes */}
-        <div className="absolute top-1/4 left-1/3 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-red-600" />
-        <div className="absolute top-2/3 right-1/4 -translate-x-1/2 -translate-y-1/2 w-3 h-3 rounded-full bg-red-600" />
-      </div>
+    <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-20 overflow-hidden bg-zinc-950">
+      
+      {/* Background Video */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0"
+      >
+        <source src="/videos/hero-bg.mp4" type="video/mp4" />
+      </video>
 
-      {/* Blueprint Grid */}
+      {/* Premium Overlay for Text Contrast */}
+      <div className="absolute inset-0 z-0 bg-white/70 backdrop-blur-[2px]" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/90 via-white/50 to-white/90" />
+
+      {/* Blueprint Grid - kept subtle over the video */}
       <div 
-        className="absolute inset-0 pointer-events-none opacity-[0.03]"
+        className="absolute inset-0 pointer-events-none opacity-[0.03] z-0"
         style={{ backgroundImage: 'radial-gradient(circle, #2563eb 1px, transparent 1px)', backgroundSize: '40px 40px' }}
       />
 
@@ -54,16 +59,6 @@ export function Hero() {
           </div>
         </motion.div>
       </div>
-      
-      {/* Scroll indicator */}
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2"
-      >
-        <div className="w-[1px] h-12 bg-gradient-to-b from-blue-200 to-transparent mx-auto" />
-      </motion.div>
     </section>
   );
 }

@@ -17,12 +17,6 @@ export function Footer() {
         />
       </div>
 
-      {/* Background Pipe Detail */}
-      <div className="absolute right-0 top-0 w-1/3 h-full opacity-5 pointer-events-none">
-        <div className="absolute top-0 right-1/4 w-[1px] h-full bg-red-600" />
-        <div className="absolute top-1/3 right-0 w-full h-[1px] bg-red-600" />
-      </div>
-
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-24">
           <div className="md:col-span-2">

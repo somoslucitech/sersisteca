@@ -31,10 +31,6 @@ export function TrustSection() {
         className="absolute inset-0 pointer-events-none opacity-[0.03]"
         style={{ backgroundImage: 'radial-gradient(circle, #2563eb 1px, transparent 1px)', backgroundSize: '40px 40px' }}
       />
-      
-      {/* Connecting Pipes - Visual Narrative */}
-      <div className="absolute top-0 left-1/3 w-[1px] h-full bg-gradient-to-b from-red-600/10 via-red-600/5 to-transparent" />
-      <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-red-600/5 to-transparent" />
 
       <div className="max-w-7xl mx-auto px-6 mb-16 text-center relative z-10">
         <motion.div

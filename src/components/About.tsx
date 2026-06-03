@@ -18,13 +18,6 @@ export function About() {
               {/* Background Detail */}
               <div className="absolute inset-0 opacity-20" 
                    style={{ backgroundImage: 'radial-gradient(circle, #3b82f6 1px, transparent 1px)', backgroundSize: '30px 30px' }} />
-              
-              {/* Red Pipe Elements */}
-              <div className="absolute inset-0 overflow-hidden">
-                <div className="absolute top-[30%] left-0 w-full h-[2px] bg-red-600/40" />
-                <div className="absolute top-0 left-[40%] w-[2px] h-full bg-red-600/40" />
-                <div className="absolute top-[30%] left-[40%] -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-red-600 shadow-[0_0_15px_rgba(239,68,68,0.5)]" />
-              </div>
 
               <div className="relative z-10 text-center p-12">
                 <div className="text-sm uppercase tracking-[0.4em] text-zinc-500 font-bold mb-4">Established</div>
