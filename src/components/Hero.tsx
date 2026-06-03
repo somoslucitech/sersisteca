@@ -6,20 +6,34 @@ export function Hero() {
   return (
     <section className="relative min-h-[100dvh] flex flex-col items-center justify-center pt-20 overflow-hidden bg-zinc-950">
       
-      {/* Background Video */}
+      {/* Background Video - Mobile */}
       <video
         autoPlay
         loop
         muted
         playsInline
-        className="absolute inset-0 w-full h-full object-cover z-0"
+        className="absolute inset-0 w-full h-full object-cover z-0 block md:hidden"
+      >
+        <source src="/videos/hero-bg-mobile.mp4" type="video/mp4" />
+      </video>
+
+      {/* Background Video - Desktop */}
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover z-0 hidden md:block"
       >
         <source src="/videos/hero-bg.mp4" type="video/mp4" />
       </video>
 
-      {/* Premium Overlay for Text Contrast */}
-      <div className="absolute inset-0 z-0 bg-white/70 backdrop-blur-[2px]" />
-      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/90 via-white/50 to-white/90" />
+      {/* Premium Overlay for Text Contrast and Section Transition */}
+      <div className="absolute inset-0 z-0 bg-white/40 backdrop-blur-[1px]" />
+      <div className="absolute inset-0 z-0 bg-gradient-to-b from-white/70 via-white/10 to-transparent" />
+      
+      {/* Bottom fade-out gradient to blend perfectly into the next section's white background */}
+      <div className="absolute bottom-0 left-0 w-full h-48 z-0 bg-gradient-to-t from-white to-transparent" />
 
       {/* Blueprint Grid - kept subtle over the video */}
       <div 

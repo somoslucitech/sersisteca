@@ -60,7 +60,7 @@ export function TrustSection() {
             {[...clients, ...clients].map((client, idx) => (
               <div 
                 key={`${client.name}-${idx}`} 
-                className="mx-8 md:mx-16 relative h-8 w-28 md:h-10 md:w-36 flex-shrink-0 grayscale opacity-30 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-700 cursor-pointer group"
+                className="mx-8 md:mx-16 relative h-12 w-36 md:h-16 md:w-48 flex-shrink-0 md:grayscale opacity-90 md:opacity-60 hover:grayscale-0 hover:opacity-100 hover:scale-110 transition-all duration-700 cursor-pointer group"
               >
                 <Image
                   src={client.src}
@@ -89,10 +89,10 @@ export function TrustSection() {
               Nuestra ingeniería se fundamenta en el cumplimiento estricto de los protocolos <span className="text-zinc-900 font-bold tracking-wider">SENCAMER</span>, rigiéndonos bajo los estándares internacionales <span className="text-red-600 font-bold italic text-base">NFPA</span> en cada diseño.
             </p>
             
-            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-10">
-              <div className="group relative">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-10 overflow-hidden">
+              <div className="group relative flex-shrink-0 z-10 bg-white/50 backdrop-blur-md rounded-r-2xl pr-4">
                 <div className="absolute -inset-4 bg-blue-50 rounded-2xl scale-95 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500" />
-                <div className="relative h-20 w-40 flex-shrink-0 grayscale group-hover:grayscale-0 transition-all duration-500">
+                <div className="relative h-20 w-40 flex-shrink-0 md:grayscale group-hover:grayscale-0 transition-all duration-500">
                   <Image
                     src="/images/logos marcas/sencamer.jpg"
                     alt="Sencamer Logo"
@@ -101,13 +101,20 @@ export function TrustSection() {
                   />
                 </div>
               </div>
-              <div className="hidden sm:block h-12 w-[1px] bg-zinc-100" />
-              <div className="flex gap-10 sm:gap-8 items-center justify-center sm:justify-start">
-                {brands.slice(0, 3).map((brand) => (
-                  <div key={brand.name} className="relative h-6 w-16 opacity-30 hover:opacity-100 transition-opacity">
-                    <Image src={brand.src} alt={brand.name} fill className="object-contain grayscale" />
-                  </div>
-                ))}
+              <div className="hidden sm:block h-16 w-[1px] bg-zinc-200 flex-shrink-0 z-10" />
+              
+              {/* Mini Marquee for Brands */}
+              <div className="relative flex overflow-x-hidden w-full max-w-[300px] md:max-w-[400px]">
+                <div className="absolute inset-y-0 left-0 w-12 bg-gradient-to-r from-zinc-50 to-transparent z-20 pointer-events-none" />
+                <div className="absolute inset-y-0 right-0 w-12 bg-gradient-to-l from-zinc-50 to-transparent z-20 pointer-events-none" />
+                
+                <div className="flex animate-marquee-fast whitespace-nowrap items-center">
+                  {[...brands.slice(0, 4), ...brands.slice(0, 4)].map((brand, idx) => (
+                    <div key={`${brand.name}-${idx}`} className="mx-6 relative h-10 w-28 md:h-12 md:w-32 flex-shrink-0 opacity-100 md:opacity-75 hover:opacity-100 transition-opacity">
+                      <Image src={brand.src} alt={brand.name} fill className="object-contain md:grayscale hover:grayscale-0 transition-all duration-300" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </motion.div>
@@ -152,6 +159,9 @@ export function TrustSection() {
         }
         .animate-marquee {
           animation: marquee 40s linear infinite;
+        }
+        .animate-marquee-fast {
+          animation: marquee 20s linear infinite;
         }
       `}</style>
     </section>
